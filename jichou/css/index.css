@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.jichou{
+    margin: 40px 40px;
+    width: 400px;
+
+}
+#container {
+
+    background: white;
+    color: black;
+}
+#jichouImg{
+    width: 400px;
+    height: 300px;
+}
+
+.write{
+    /*background: aqua;*/
+
+    width: 400px;
+    font-size: 24px;
+
+}
+ .subline{
+     margin-top: 23px;
+     width: 400px;
+     height: 100px;
+     /*background: aqua;*/
+     color:white;
+ }
+.subline input{
+    display: none;
+}
+ .subline>div{
+     display: inline-block;
+     height: 60px;
+     width: 120px;
+     background: black;
+     border-radius: 5px;
+     font-size: 25px;
+     font-weight: bold;
+     text-align: center;
+     line-height: 60px;
+     margin-left: 6px;
+ }

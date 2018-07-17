@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="html2Img" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/js/canvas2image-master" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/canvas2image-master" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
