@@ -1,0 +1,103 @@
+[
+  {"hotelname":"成都大酒店",
+  "hotelid":"123",
+   "hotelpic":"./images/tokeyo1.jpg",
+  "city":"成都"
+},{"hotelname":"成都天友大酒店",
+  "hotelid":"124",
+  "hotelpic":"./images/tokeyo2.jpg",
+  "city":"成都"
+},{"hotelname":"成都荣盛酒店",
+  "hotelid":"125",
+  "hotelpic":"./images/tokeyo3.jpg",
+  "city":"成都"
+},{"hotelname":"成都国际酒店",
+  "hotelid":"126",
+  "hotelpic":"./images/tokeyo4.jpg",
+  "city":"成都"
+},{"hotelname":"成都希尔顿酒店",
+  "hotelid":"127",
+  "hotelpic":"./images/tokeyo5.jpg",
+  "city":"成都"
+},{"hotelname":"上海大酒店",
+  "hotelid":"128",
+  "hotelpic":"./images/tokeyo6.jpg",
+  "city":"上海"
+},{"hotelname":"上海天友大酒店",
+  "hotelid":"129",
+  "hotelpic":"./images/tokeyo7.jpg",
+  "city":"上海"
+},{"hotelname":"上海国际大酒店",
+  "hotelid":"1210",
+  "hotelpic":"./images/tokeyo8.jpg",
+  "city":"上海"
+},{"hotelname":"上海东方大酒店",
+  "hotelid":"1211",
+  "hotelpic":"./images/tokeyo9.jpg",
+  "city":"上海"
+},{"hotelname":"上海希尔顿大酒店",
+  "hotelid":"1212",
+  "hotelpic":"./images/16056-4x3.jpg",
+  "city":"上海"
+},{"hotelname":"北京大酒店",
+  "hotelid":"128",
+  "hotelpic":"./images/tokeyo6.jpg",
+  "city":"北京"
+},{"hotelname":"北京天友大酒店",
+  "hotelid":"129",
+  "hotelpic":"./images/tokeyo7.jpg",
+  "city":"北京"
+},{"hotelname":"北京国际大酒店",
+  "hotelid":"1210",
+  "hotelpic":"./images/tokeyo8.jpg",
+  "city":"北京"
+},{"hotelname":"北京东方大酒店",
+  "hotelid":"1211",
+  "hotelpic":"./images/tokeyo9.jpg",
+  "city":"北京"
+},{"hotelname":"北京希尔顿大酒店",
+  "hotelid":"1212",
+  "hotelpic":"./images/16056-4x3.jpg",
+  "city":"北京"
+},{"hotelname":"北京大酒店",
+  "hotelid":"128",
+  "hotelpic":"./images/tokeyo6.jpg",
+  "city":"北京"
+},{"hotelname":"北京天友大酒店",
+  "hotelid":"129",
+  "hotelpic":"./images/tokeyo7.jpg",
+  "city":"北京"
+},{"hotelname":"北京国际大酒店",
+  "hotelid":"1210",
+  "hotelpic":"./images/tokeyo8.jpg",
+  "city":"北京"
+},{"hotelname":"北京东方大酒店",
+  "hotelid":"1211",
+  "hotelpic":"./images/tokeyo9.jpg",
+  "city":"北京"
+},{"hotelname":"北京希尔顿大酒店",
+  "hotelid":"1212",
+  "hotelpic":"./images/16056-4x3.jpg",
+  "city":"北京"
+},{"hotelname":"深圳大酒店",
+  "hotelid":"128",
+  "hotelpic":"./images/tokeyo6.jpg",
+  "city":"深圳"
+},{"hotelname":"深圳天友大酒店",
+  "hotelid":"129",
+  "hotelpic":"./images/tokeyo7.jpg",
+  "city":"深圳"
+},{"hotelname":"深圳国际大酒店",
+  "hotelid":"1210",
+  "hotelpic":"./images/tokeyo8.jpg",
+  "city":"深圳"
+},{"hotelname":"深圳东方大酒店",
+  "hotelid":"1211",
+  "hotelpic":"./images/tokeyo9.jpg",
+  "city":"深圳"
+},{"hotelname":"深圳希尔顿大酒店",
+  "hotelid":"1212",
+  "hotelpic":"./images/16056-4x3.jpg",
+  "city":"深圳"
+}
+]

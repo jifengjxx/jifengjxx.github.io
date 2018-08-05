@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agoda（安可达）官方网站 – 低价预订酒店住宿，优惠低至2折！</title>
+    <link rel="icon" href="hotel%20.icon" type="image/icon">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/normalized.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+     <header>
+
+         <div class="nav clearFix">
+             <div class="nav_left fl">
+                 <div class="logo">
+                     <a href="./index.html">
+                         <img src="./images/agoda-logo.svg" alt="">
+                         <img src="./images/logo-zh-cn.svg" alt="">
+                     </a>
+                 </div>
+                 <ul class="menulist nav_left_menulist clearFix ">
+                     <li><a href="./index.html">住宿</a></li>
+                     <li><a href="javascript:;">机票</a></li>
+                     <li><a href="javascript:;">机场出租车</a></li>
+                     <li><a href="./deals.html">今日优惠</a></li>
+                 </ul>
+             </div>
+             <ul class="menulist nav_right_menulist">
+                 <li>
+                     <ul>
+                         <li>
+                             <div class="service" >
+                                 <img src="./images/phone.jpg" alt="">
+                             </div>
+                             <div class="service_text">
+                                  <div class="service_text_sub">
+                                     <span>中文客服</span><br>
+                                     <span>全年无休</span>
+                                  </div>
+                             </div>
+                         </li>
+                     </ul>
+                 </li>
+                 <li>
+                 <img  id="img_1" src="./images/callphone.jpg" alt="">
+                 <img  id="img_2"src="./images/wechat.jpg" alt="">
+                 </li>
+                 <li>
+
+                             <img src="./images/china.jpg" alt="">
+
+                             <span>RMB</span>
+
+                 </li>
+                 <li>
+                     <ul>
+                          <li id="loginNav_page">
+                              <span>登录</span>
+                          </li>
+                         <li id="registerNav_page">
+                              <span>注册</span>
+                         </li>
+                     </ul>
+                 </li>
+             </ul>
+             <div  id="codephone" class="codephone hidden">
+                 <img src="./images/codephone.jpg" alt="">
+             </div>
+             <div id="codewechat" class="codewechat hidden">
+                 <img src="./images/codewechat.jpg" alt="">
+             </div>
+             <div id="oheader" class="nav_fix ">
+                 <div class="search_box_nav">
+                     <div class="icon_box_nav " >
+                         <div class="icon_nav_next">
+                             <img src="./images/search%20(2).png" style="width: 40px; height: 40px;" alt="">
+                             <div class="icon_nav_child">
+                                 <input type="text"  value="" placeholder="城市、景点或住宿关键词">
+                             </div>
+                         </div>
+                     </div>
+                     <div class="icon_box_nav " >
+                         <div class="icon_nav_next">
+                             <img src="./images/calendar.png" alt="">
+                             <div class="icon_nav_child">
+                                 <div class="icon_nav_check">
+                                     <div class="icon_nav_text"> 2018年6月10日</div>
+                                     <div class="icon_nav_text">周日</div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="icon_box_nav   " >
+                         <div class="icon_nav_next">
+                             <img src="./images/calendar.png" alt="">
+                             <div class="icon_nav_child">
+                                 <div class="icon_nav_check">
+                                     <div class="icon_nav_text"> 2018年6月10日</div>
+                                     <div class="icon_nav_text">周日</div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="icon_box_nav" >
+                         <div class="icon_nav_next">
+                             <img src="./images/person.png" alt="">
+                             <div class="icon_nav_child">
+                                 <div class="nav_child_person">
+                                     <span>2名大人</span>
+                                     <span>0名儿童</span>
+                                 </div>
+                                 <div class="nav_child_room">
+                                     <span>1间客房</span>
+                                 </div>
+                             </div>
+                         </div>
+
+
+                     </div>
+                     <button class="nav_search_btn">搜索</button>
+
+                 </div>
+             </div>
+         </div>
+
+         <div id="register_page" class="register hidden login_style ">
+             <div class="register_content clearFix">
+                 <div class="register_left fl">
+                     <div class="register_box">
+                         <div >
+                             <h3 >会员注册</h3>
+                         </div>
+                         <div class="wechat_green">
+                             <span>使用微信账号注册</span>
+                         </div>
+                         <div class="line clearFix">
+                             <div class="line_draw"></div>
+                             <span >或</span>
+                         </div>
+
+                             <label class="label_style">电子邮件</label><br/>
+                             <input id="register_email" class="login_input" type="email"><br/>
+                             <div class="error"></div>
+                             <label  class="label_style">手机号码</label><br/>
+                             <input  id="register_phone" class="login_input" type="phone"><br/>
+                             <div class="error"></div>
+                             <label  class="label_style">密码</label><br/>
+                             <input id="register_password" class="login_input" type="password"><br/>
+                             <div class="error"></div>
+                             <input type="checkbox">
+                             <lable class="checkbox_label">我想收到Agoda的促销优惠邮件，我可按隐私政策中提到随时取消订阅。</lable>
+                             <button id="login_register" class="login_btn" type="button">点击注册</button>
+                             <div class="continue_text">继续操作即表示，您同意Agoda的<a href="javascript:;" >使用条款</a>和<a href="javascript:;" >隐私政策</a>。</div>
+
+                     </div>
+                     <hr>
+                     <div class="register_bottom">
+                         <div><span>已经注册？</span></div>
+                         <div><button id="jump_register" type="button">登录账户</button></div>
+                     </div>
+                 </div>
+                 <div class="register_right fr">
+                 </div>
+                 <div id="exit_register"class="exit_register">X</div>
+             </div>
+         </div>
+
+         <div id="login_page" class="login hidden login_style">
+             <div class="register_content clearFix">
+                 <div class="register_left fl">
+                     <div class="register_box">
+                         <div>
+                             <h3 >登录只需一点</h3>
+                         </div>
+                         <div class="wechat_green">
+                             <span>使用微信账号登录</span>
+                         </div>
+                         <div class="line clearFix">
+                             <div class="line_draw"></div>
+                             <span >或</span>
+                         </div>
+
+                         <div class="login_choose">
+                             <div  id="email_login" class="email_login">
+                                 <img src="./images/email.png" alt="">
+                                 <span>邮箱登录</span>
+                             </div>
+                             <div id="phone_login" class="phone_login">
+                                 <img src="./images/phone.png" alt="">
+                                 <span>手机登录</span>
+                             </div>
+                         </div>
+
+                             <div id="login_email" class="login_email">
+                             <label  class="label_style">电子邮件</label><br/>
+                             <input  id="emailE" class="login_input" type="email" placeholder="请输入邮箱"><br/>
+                              <div class="error"></div>
+                             <label  class="label_style">邮箱密码</label><br/>
+                             <input id="passwordE"  class="login_input" type="password" placeholder="请输入邮箱密码">
+                             <br/>
+                                 <div class="error"></div>
+                                 <span class="forget">忘记密码</span>
+                                 <button  id="login_btn_E" class="login_btn login_color" type="button">登录</button>
+                             </div>
+                             <div id="login_phone"  class="login_phone hidden">
+                                 <label   class="label_style">手机号码</label><br/>
+                                 <input id="phoneP" class="login_input" type="phone" placeholder="请输入电话号码"><br/>
+                                 <div class="error"></div>
+                                 <label   class="label_style">密码</label><br/>
+                                 <input id="passwordP" class="login_input" type="password" placeholder="请输入密码">
+                                 <br/><div class="error"></div>
+                                 <span class="forget">忘记密码</span>
+                                 <button  id="login_btn_P" class="login_btn login_color" type="button">登录</button>
+                             </div>
+
+                             <div class="continue_text"> 继续操作即表示，您同意Agoda的<a href="javascript:;">使用条款</a>和<a href="javascript:;"  >隐私政策</a>。</div>
+
+                     </div>
+                     <hr>
+                     <div class="register_bottom">
+                         <div><span>还没有账户？</span></div>
+                         <div><button id="jump_login" type="button">点击注册</button></div>
+                     </div>
+                 </div>
+                 <div class="login_right fr">
+
+          </div>
+
+                 <div id="exit_login"class="exit_login">X</div>
+             </div>
+
+         </div>
+
+
+     </header>
+
+     <main>
+         <div class="banner clearFix">
+                  <div class="hello_box fl">
+                 <div class="templetPic">
+                     <img src="./images/templecentric.png" alt="">
+                 </div>
+
+                 <div class="hello_box_sub">
+                     <div class="hello_message">
+                         <h1>搜索、预订、支付，就是那么简单！</h1>
+                         <h2>掌握全球1,900,000+家各类住宿优惠</h2>
+                     </div>
+                     <div class="hello_search">
+                          <div class="search_box_tab">
+                              <div class="box_tab_sub">
+                                  <div class="search_box_tab_sub">所有客房</div>
+                                  <div class="search_box_tab_sub">短租</div>
+                              </div>
+                              <div class="box_tab_pic">
+                                  <img src="./images/alipay.svg" alt="">
+                                  <img src="./images/wechatpay.svg" alt="">
+                                  <img src="./images/unionpay.png" alt="">
+                              </div>
+                          </div>
+                         <div class="search_box">
+                             <div class="icon_box first_icon_box clearFix" >
+                                 <div id="icon_menu_chooseDiv" class="icon_box_next">
+                                     <img src="./images/search%20(2).png" style="width: 40px; height: 40px;" alt="">
+                                     <div class="icon_box_child">
+                                         <input id="icon_box_input" type="text"  value="" placeholder="城市、景点或住宿关键词">
+                                     </div>
+                                     <div id="icon_hotel_id" class="icon_hotel_id" ></div>
+                                 </div>
+                                 <ul  id="menuBtn" class="search_icon_menu hidden">
+<div  id="menuClose">取消</div>
+                                 </ul>
+                             </div>
+
+                             <div class="icon_box_second">
+                                 <div class="icon_box  time_icon_box" >
+                                 <div class="icon_box_next">
+                                         <img src="./images/calendar.png" alt="">
+                                         <div class="icon_box_child">
+                                             <div class="icon_box_check">
+                                                 <div class="icon_box_check_sub person_style2">
+                                                     入住时间
+                                                 </div>
+                                                 <input type=" text" id="banner_dateIn"  class="icon_box_text" placeholder="2018-06-14">
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="icon_box  time_icon_box" >
+                                     <div class="icon_box_next">
+                                         <img src="./images/calendar.png" alt="">
+                                         <div class="icon_box_child">
+                                             <div class="icon_box_check">
+                                                <div class="icon_box_check_sub person_style2">
+                                                    离店时间
+                                                </div>
+                                                 <input type=" text" id="banner_dateOut"   class="icon_box_text" placeholder="2018-06-14">
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+
+                             <div class="icon_box_third">
+                                 <div class="icon_box  last_icon_box" >
+                                     <div   id="icon_box_chooseDiv" class="icon_box_next">
+                                         <img src="./images/person.png" alt="">
+                                         <div class="icon_box_child">
+                                              <div class="box_child_person">
+                                                 <span id="adult">0</span> <span class="person_style2">名大人</span>
+                                                 <span id="child">0</span> <span class="person_style2">名儿童</span>
+                                              </div>
+                                             <div class="box_child_room">
+                                               <span id="room">0</span>  <span class="person_style2">间客房</span>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div    id="banner_person_choose"   class="banner_person_choose  hidden ">
+                                            <div class="choose_first choose_line  clearFix">
+                                                <div id="adult_reduce" class="reduce fl">-</div>
+                                                <div  class="person_style" id="adult_num" contenteditable="true">0</div>
+                                                <div class="adult_text person_style">名大人</div>
+                                                <div id="adult_add" class="add fr">+</div>
+                                            </div>
+                                             <div class="choose_second choose_line clearFix">
+                                                 <div id="child_reduce" class="reduce fl">-</div>
+                                                 <div  class="person_style" id="child_num" contenteditable="true">0</div>
+                                                 <div class="child_text person_style">名儿童</div>
+                                                 <div id="child_add"  class="add fr">+</div>
+                                             </div>
+                                             <div class="choose_third choose_line clearFix">
+                                                 <div id="room_reduce" class="reduce fl">-</div>
+                                                     <div  class="person_style" id="room_num" contenteditable="true">0</div>
+                                                 <div class="room_text person_style">间房间</div>
+                                                 <div id="room_add" class="add fr">+</div>
+                                             </div>
+                                         <button id="banner_choose_personBtn" class="person_style">确认</button>
+
+
+                                     </div>
+
+                             </div>
+
+                                 <div id="box_search_btn" class="box_search_btn1">搜索</div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+                  <div class="container_box fr">
+                      <div class="container_box_out">
+                          <div class="container_box1_show container_show">
+                               <a href="javascript:;"  >
+                                  <div class="title">
+                                      <div  class="title_wrapper">
+                                          <div class="title_text_wrapper">
+                                              <p class="p_1">额外优惠</p>
+                                              <p  class="p_2">10%</p>
+                                              <p  class="p_3">囊括精选目的地</p>
+                                              <p  class="p_4">我们的优惠价每天都在更新，低无止境！</p>
+                                              <p class="p_5">揭晓今日特价</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                          <div class="container_box2_show container_show">
+                              <a href="javascript:;">
+                              <div class="title ">
+                                  <div  class="title_wrapper">
+                                      <div class="title_pic">
+                                          <img src="./images/NHA_480x160px.jpg" alt="">
+                                      </div>
+                                      <div class="title_text_wrapper">
+                                          <p class="p_1">成为房东</p>
+                                          <p class="p_2">在Agoda安住家推出您的房源
+                                          无需支付佣金及其他费用</p>
+                                          <p class="p_3">今天就亮出您的房源</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </a>
+                          </div>
+                      </div>
+                          <div class="container_box3_show container_show2">
+                                <a href="javascript:;">
+                                <div class="title ">
+                                  <div  class="title_wrapper">
+                                      <div class="title_pic">
+                                          <img src="./images/Banner-Insider-Deals-icon.svg" alt="">
+                                      </div>
+                                      <div class="title_text_wrapper">
+                                          <p class="p_1">专属优惠</p>
+                                          <p class="p_2">订房优惠至7折</p>
+                                          <p class="p_3">现在登录即享会员优惠</p>
+                                          <p class="p_4">马上登录</p>
+                                      </div>
+                                  </div>
+                              </div>
+                                </a>
+                          </div>
+                      <div class="container_box4_show container_show2">
+                          <a href="javascript:;">
+                              <div class="title ">
+                                  <div  class="title_wrapper">
+                                      <div class="title_text_wrapper">
+                                          <p class="p_4">全方位比价</p>
+                                          <p class="p_1">搜出<br>
+                                              完美空中旅行</p>
+                                          <p class="p_2">不论国内外，Agoda都能帮您找到合心意的特价航班</p>
+                                          <p class="p_3">搜索航班</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+
+                  </div>
+         </div>
+
+         <div class="payment">
+             <div class="payment_logo">
+                 <div class="welcome">
+                    欢迎使用
+                 </div>
+                 <div class="payment_pic">
+                     <img src="./images/wechatpay.png" alt="">
+                     <img src="./images/alipay.png" alt="">
+                     <img src="./images/unionpay.png" alt="">
+                 </div>
+             </div>
+         </div>
+
+         <div class="agod_container">
+             <div class="agod_text">
+                 <p>订房更便捷，选择更明智，尽在Agoda!</p>
+                 <p>因为我们对旅游的热情，Agoda团队致力于为您提供优惠的酒店、度假村、特色住房、度假住宿等大量选择，确保您的行程称心如意。无论是探险之旅、做背包客、蜜月旅行还是家庭度假，我们都为您准备好了。</p>
+                 <a href="javascript:;"> AGODA的过人之处</a>
+             </div>
+         </div>
+
+         <div class="agod_target">
+              <div class="agod_target_box">
+                  <div class="agod_target_text">
+                      <p>探索人气目的地</p>
+                      <div class="agod_target_choose">
+                          <div id="agod_target_tab_first" class="agod_target_tab target_tab_line">
+                              国内热门
+                          </div>
+                          <div id="agod_target_tab_second" class="agod_target_tab ">
+                              专属精选
+                          </div>
+                      </div>
+                      <div id="agod_img_first" class="agod_target_content">
+                          <ul>
+                              <li>
+                                  <ul class="agod_target_sub">
+                                      <li class="agod_target_pic1">
+                                         <span>上海</span>
+                                          <a href="./placehotel.html?95819&上海国际大酒店">
+                                              <div class="target_mask"></div>
+                                          </a>
+                                          <div class="agod_target_subimg">
+                                                  <img src="./images/1_3987_02.jpg" alt="">
+                                          </div>
+                                      </li>
+                                      <li class="agod_target_pic2">
+                                          <span>广州</span>
+                                          <a href="./placehotel.html?98020&广州国际大酒店">
+                                              <div class="target_mask"></div>
+                                          </a>
+                                          <div class="agod_target_subimg">
+                                                  <img src="./images/1_10112_02.jpg" alt="">
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <ul class="agod_target_sub clearFix">
+                                      <li class="agod_target_pic3 fl bj_style">
+                                          <span>北京</span>
+                                          <a href="./placehotel.html?94293&北京国际大酒店">
+                                              <div class="target_mask"></div>
+                                          </a>
+                                          <div class="agod_target_subimg">
+                                                  <img src="./images/1_1569_02.jpg" alt="">
+                                          </div>
+                                      </li>
+                                      <li class="agod_target_pic3 fl">
+                                          <span>深圳</span>
+                                          <a href="./placehotel.html?98985&深圳国际大酒店">
+                                              <div class="target_mask"></div>
+                                          </a>
+                                          <div class="agod_target_subimg">
+                                                  <img src="./images/1_12333_02.jpg" alt="">
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <ul class="agod_target_subNext">
+                                              <li class="agod_target_pic4">
+                                                  <span>成都</span>
+                                                  <a href="./placehotel.html?108965&成都大酒店">
+                                                      <div class="target_mask"></div>
+                                                  </a>
+                                                  <div class="agod_target_subimg">
+                                                          <img src="./images/1_4729_02.jpg" alt="">
+                                                  </div>
+
+                                              </li>
+                                              <li class="agod_target_pic4 hz_style">
+                                                  <span>杭州</span>
+                                                  <a href="./placehotel.html?100428&杭州大酒店">
+                                                      <div class="target_mask"></div>
+                                                  </a>
+                                                  <div class="agod_target_subimg">
+                                                          <img src="./images/1_14892_02.jpg" alt="">
+                                                  </div>
+                                              </li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <ul class="agod_target_sub">
+                                      <li class="agod_target_pic2">
+                                          <span>南京</span>
+                                          <a href="./placehotel.html?114920&南京大酒店">
+                                              <div class="target_mask"></div>
+                                          </a>
+                                          <div class="agod_target_subimg">
+                                                  <img src="./images/1_7875_02.jpg" alt="">
+                                          </div>
+                                      </li>
+                                      <li class="agod_target_pic1">
+                                          <span>西安</span>
+                                          <a href="./placehotel.html?118431&西安国际大酒店">
+                                              <div class="target_mask"></div>
+                                          </a>
+                                          <div class="agod_target_subimg">
+                                                  <img src="./images/1_15947_02.jpg" alt="">
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </div>
+
+                      <div  id="agod_img_second" class="agod_target_content hidden">
+                          <ul>
+                              <li>
+                                  <ul class="agod_target_sub">
+                                      <li class="agod_target_pic1">
+                                          <span>香港</span>
+                                          <a href="./placehotel.html?98228&香港国际大酒店">
+                                              <div class="target_mask"></div>
+                                          </a>
+                                          <div class="agod_target_subimg">
+
+                                              <img src="./images/16808-4x3.jpg" alt="">
+
+                                          </div>
+                                          <!--<img src="./images/1_3987_02.jpg" alt="">-->
+                                      </li>
+                                      <li class="agod_target_pic2">
+                                          <span>东京</span>
+                                          <a href="./placehotel.html?96934&东京国际大酒店">
+                                              <div class="target_mask"></div>
+                                          </a>
+                                          <div class="agod_target_subimg">
+                                              <img src="./images/tokeyo4.jpg" alt="">
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <ul class="agod_target_sub clearFix">
+                                      <li class="agod_target_pic3 fl bj_style">
+                                          <span>上海</span>
+                                          <a href="./placehotel.html?95819&上海国际大酒店">
+                                              <div class="target_mask"></div>
+                                          </a>
+                                          <div class="agod_target_subimg">
+                                              <img src="./images/tokeyo1.jpg" alt="">
+                                          </div>
+                                      </li>
+                                      <li class="agod_target_pic3 fl">
+                                          <span>大阪</span>
+                                          <a href="./placehotel.html?99190&大阪国际大酒店">
+                                              <div class="target_mask"></div>
+                                          </a>
+                                          <div class="agod_target_subimg">
+                                              <img src="./images/tokeyo8.jpg" alt="">
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <ul class="agod_target_subNext">
+                                              <li class="agod_target_pic4">
+                                                  <span>曼谷</span>
+                                                  <a href="./placehotel.html?99152&曼谷国际大酒店">
+                                                      <div class="target_mask"></div>
+                                                  </a>
+                                                  <div class="agod_target_subimg">
+                                                      <img src="./images/tokeyo3.jpg" alt="">
+                                                  </div>
+
+                                              </li>
+                                              <li class="agod_target_pic4 hz_style">
+                                                  <span>北京</span>
+                                                  <a href="./placehotel.html?94293&北京国际大酒店">
+                                                      <div class="target_mask"></div>
+                                                  </a>
+                                                  <div class="agod_target_subimg">
+                                                      <img src="./images/1_14892_02.jpg" style="background-size: contain" alt="">
+                                                  </div>
+                                              </li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <ul class="agod_target_sub">
+                                      <li class="agod_target_pic2">
+                                          <span>京都</span>
+                                          <a href="./placehotel.html?94496&京都国际大酒店">
+                                              <div class="target_mask"></div>
+                                          </a>
+                                          <div class="agod_target_subimg">
+                                              <img src="./images/tokeyo9.jpg" alt="">
+                                          </div>
+                                      </li>
+                                      <li class="agod_target_pic1">
+                                          <span>深圳</span>
+                                          <a href="./placehotel.html?98731&深圳国际大酒店">
+                                              <div class="target_mask"></div>
+                                          </a>
+                                          <div class="agod_target_subimg">
+                                              <img src="./images/1_12333_02.jpg" alt="">
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+         </div>
+
+     </main>
+
+     <footer>
+          <div class="footer_wechat">
+              <div class="footer_wechat_box">
+                  <div class="footer_wechat_left">
+                      <ul class="footer_wechat_sub">
+                          <li>
+                              <ul>
+                                  <li>
+                                      <img src="./images/gou.jpg" alt="">
+                                      <span>预订服务</span>
+                                  </li>
+                                  <li>
+                                      <img src="./images/gou.jpg" alt="">
+                                      <span>旅行攻略</span>
+                                  </li>
+                                  <li>
+                                      <img src="./images/gou.jpg" alt="">
+                                      <span>更多优惠</span>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <img src="./images/wechat_footer.jpg" alt="">
+                          </li>
+                          <li>
+                              <p >关注微信公众号</p>
+                              <p>更多旅行及优惠资讯，<br/>尽在“Agoda安可达”</p></li>
+                      </ul>
+                  </div>
+                  <div class="footer_wechat_right">
+                      <ul  class="footer_wechat_sub">
+                          <li>
+                              <ul>
+                                  <li>
+                                      <img src="./images/gou.jpg" alt="">
+                                      <span>手机价格更便宜</span>
+                                  </li>
+                                  <li>
+                                      <img src="./images/gou.jpg" alt="">
+                                      <span>预订轻松便捷</span>
+                                  </li>
+                                  <li>
+                                      <img src="./images/gou.jpg" alt="">
+                                      <span>随时管理订单</span>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <img src="./images/agoda_footer.jpg" alt="">
+                          </li>
+                          <li>
+                              <p >扫码下载App</p>
+                              <p>马上解锁，获取比网站<br/>更优的价格</p>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="footer_help">
+              <div class="footer_help_box">
+                  <ul class="footer_help_menulist">
+                      <li>
+                          <ul>
+                              <li>帮助</li>
+                              <li>联系我们</li>
+                              <li>常见问题与解答</li>
+                              <li>隐私政策</li>
+                              <li>Cookie政策</li>
+                              <li>服务条款</li>
+                          </ul>
+                      </li>
+                      <li>
+                          <ul>
+                              <li>关于我们</li>
+                              <li>PointsMAX</li>
+                              <li>工作职位</li>
+                              <li>新闻中心</li>
+
+                          </ul>
+                      </li>
+                      <li>
+                          <ul>
+                              <li>目的地</li>
+                              <li>国家/地区</li>
+                              <li>热门城市</li>
+
+                          </ul>
+                      </li>
+                      <li>
+                          <ul>
+                              <li>商业合作</li>
+                              <li>酒店加盟</li>
+                              <li>联合营销</li>
+
+                          </ul>
+                      </li>
+                      <li>
+                          <ul>
+                              <li>下载客户端</li>
+                              <li>iOS应用程序</li>
+                              <li>安卓应用程序</li>
+
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer_country">
+              <div class="footer_country_box">
+                 <ul class="xslgray tex_left">
+                             <li class="slgraybold"><a title="热门国家/地区">热门国家/地区</a></li>
+                             <li><a href="/country/thailand.html" title="泰国酒店">泰国酒店</a></li>
+                             <li><a href="/country/china.html" title="中国酒店">中国酒店</a></li>
+                             <li><a href="/country/taiwan.html" title="台湾酒店">台湾酒店</a></li>
+                             <li><a href="/country/hong-kong.html" title="香港酒店">香港酒店</a></li>
+                             <li><a href="/country/malaysia.html" title="马来西亚酒店">马来西亚酒店</a></li>
+                             <li><a href="/country/south-korea.html" title="韩国酒店">韩国酒店</a></li>
+                             <li><a href="/country/japan.html" title="日本酒店">日本酒店</a></li>
+                             <li><a href="/country/indonesia.html" title="印尼酒店">印尼酒店</a></li>
+                             <li><a href="/country/philippines.html" title="菲律宾酒店">菲律宾酒店</a></li>
+                             <li><a href="/country/singapore.html" title="新加坡酒店">新加坡酒店</a></li>
+                             <li><a href="/country/macau.html" title="澳门酒店">澳门酒店</a></li>
+                             <li><a href="/country/australia.html" title="澳洲酒店">澳洲酒店</a></li>
+                             <li><a href="/country/united-states.html" title="美国酒店">美国酒店</a></li>
+                             <li><a href="/country/vietnam.html" title="越南酒店">越南酒店</a></li>
+                             <li><a href="/country/sri-lanka.html" title="斯里兰卡酒店">斯里兰卡酒店</a></li>
+                             <li><a href="/country/france.html" title="法国酒店">法国酒店</a></li>
+                             <li><a href="/country/cambodia.html" title="柬埔寨酒店">柬埔寨酒店</a></li>
+                             <li><a href="/country/italy.html" title="意大利酒店">意大利酒店</a></li>
+                         </ul>
+                         <ul class="xslgray tex_left">
+                             <li><a href="javascript:;" title="英国酒店">英国酒店</a></li>
+                             <li><a href="javascript:;" title="新西兰酒店">新西兰酒店</a></li>
+                             <li><a href="javascript:;" title="德国酒店">德国酒店</a></li>
+                             <li><a href="javascript:;" title="马尔代夫酒店">马尔代夫酒店</a></li>
+                             <li><a href="javascript:;" title="尼泊尔酒店">尼泊尔酒店</a></li>
+                             <li><a href="javascript:;" title="缅甸酒店">缅甸酒店</a></li>
+                             <li><a href="javascript:;" title="西班牙酒店">西班牙酒店</a></li>
+                             <li><a href="javascript:;" title="印度酒店">印度酒店</a></li>
+                             <li><a href="javascript:;" title="塞班岛酒店">塞班岛酒店</a></li>
+                             <li><a href="javascript:;" title="阿联酋酒店">阿联酋酒店</a></li>
+                             <li><a href="javascript:;" title="老挝酒店">老挝酒店</a></li>
+                             <li><a href="javascript:;" title="希腊酒店">希腊酒店</a></li>
+                             <li><a href="javascript:;" title="瑞士酒店">瑞士酒店</a></li>
+                             <li><a href="javascript:;" title="塞舌尔酒店">塞舌尔酒店</a></li>
+                             <li><a href="javascript:;" title="土耳其酒店">土耳其酒店</a></li>
+                             <li><a href="javascript:;" title="荷兰酒店">荷兰酒店</a></li>
+                             <li><a href="javascript:;" title="加拿大酒店">加拿大酒店</a></li>
+                             <li><a href="javascript:;" title="奥地利酒店">奥地利酒店</a></li>
+                         </ul>
+                         <ul class="xslgray tex_left">
+                             <li><a href="javascript:;" title="俄罗斯酒店">俄罗斯酒店</a></li>
+                             <li><a href="javascript:;" title="毛里求斯酒店">毛里求斯酒店</a></li>
+                             <li><a href="javascript:;" title="关岛酒店">关岛酒店</a></li>
+                             <li><a href="javascript:;" title="斐济酒店">斐济酒店</a></li>
+                             <li><a href="javascript:;" href="/country/czech-republic.html" title="捷克酒店">捷克酒店</a></li>
+                             <li><a href="javascript:;" title="南非酒店">南非酒店</a></li>
+                             <li><a href="javascript:;"title="比利时酒店">比利时酒店</a></li>
+                             <li><a href="javascript:;" title="匈牙利酒店">匈牙利酒店</a></li>
+                             <li><a href="javascript:;" title="瑞典酒店">瑞典酒店</a></li>
+                             <li><a href="javascript:;" title="丹麦酒店">丹麦酒店</a></li>
+                             <li><a href="javascript:;" href="/country/portugal.html" title="葡萄牙酒店">葡萄牙酒店</a></li>
+                             <li><a href="javascript:;" title="巴西酒店">巴西酒店</a></li>
+                             <li><a href="javascript:;" title="以色列酒店">以色列酒店</a></li>
+                             <li><a href="javascript:;" title="挪威酒店">挪威酒店</a></li>
+                             <li><a href="javascript:;" title="波兰酒店">波兰酒店</a></li>
+                             <li><a href="javascript:;" title="文莱酒店">文莱酒店</a></li>
+                             <li><a href="javascript:;" title="墨西哥酒店">墨西哥酒店</a></li>
+                             <li><a href="javascript:;" title="芬兰酒店">芬兰酒店</a></li>
+                         </ul>
+                         <ul class="xslgray tex_left">
+                             <li class="slgraybold"> <a title="热门城市">热门城市</a></li>
+                             <li><a href="javascript:;" title="香港酒店">香港酒店</a></li>
+                             <li><a href="javascript:;" title="曼谷酒店">曼谷酒店</a></li>
+                             <li><a href="javascript:;" title="普吉岛酒店">普吉岛酒店</a></li>
+                             <li><a href="javascript:;" title="清迈酒店">清迈酒店</a></li>
+                             <li><a href="javascript:;" title="台北酒店">台北酒店</a></li>
+                             <li><a href="javascript:;" title="首尔酒店">首尔酒店</a></li>
+                             <li><a href="javascript:;" title="吉隆坡酒店">吉隆坡酒店</a></li>
+                             <li><a href="javascript:;" title="垦丁酒店">垦丁酒店</a></li>
+                             <li><a href="javascript:;" title="新加坡酒店">新加坡酒店</a></li>
+                             <li><a href="javascript:;" title="上海酒店">上海酒店</a></li>
+                             <li><a href="javascript:;" title="巴厘岛酒店">巴厘岛酒店</a></li>
+                             <li><a href="javascript:;" title="北京酒店">北京酒店</a></li>
+                             <li><a href="javascript:;" title="亚庇酒店">亚庇酒店</a></li>
+                             <li><a href="javascript:;" title="澳门酒店">澳门酒店</a></li>
+                             <li><a href="javascript:;" title="济州酒店">济州酒店</a></li>
+                             <li><a href="javascript:;" title="拜县酒店">拜县酒店</a></li>
+                             <li><a href="javascript:;" title="芭提雅酒店">芭提雅酒店</a></li>
+                             <li><a href="javascript:;" title="苏梅岛酒店">苏梅岛酒店</a></li>
+                         </ul>
+                         <ul class="xslgray tex_left">
+                             <li><a href="javascript:;" title="东京酒店">东京酒店</a></li>
+                             <li><a href="javascript:;" title="花莲酒店">花莲酒店</a></li>
+                             <li><a href="javascript:;" title="广州酒店">广州酒店</a></li>
+                             <li><a href="javascript:;" title="高雄酒店">高雄酒店</a></li>
+                             <li><a href="javascript:;" title="长滩岛酒店">长滩岛酒店</a></li>
+                             <li><a href="javascript:;" title="大阪酒店">大阪酒店</a></li>
+                             <li><a href="javascript:;" title="皮皮岛酒店">皮皮岛酒店</a></li>
+                             <li><a href="javascript:;" title="深圳酒店">深圳酒店</a></li>
+                             <li><a href="javascript:;" title="京都酒店">京都酒店</a></li>
+                             <li><a href="javascript:;" title="杭州酒店">杭州酒店</a></li>
+                             <li><a href="javascript:;" title="厦门酒店">厦门酒店</a></li>
+                             <li><a href="javascript:;" title="甲米酒店">甲米酒店</a></li>
+                             <li><a href="javascript:;" title="南投酒店">南投酒店</a></li>
+                             <li><a href="javascript:;" title="槟城酒店">槟城酒店</a></li>
+                             <li><a href="javascript:;" title="兰卡威酒店">兰卡威酒店</a></li>
+                             <li><a href="javascript:;" title="巴黎酒店">巴黎酒店</a></li>
+                             <li><a href="javascript:;" title="三亚酒店">三亚酒店</a></li>
+                             <li><a href="javascript:;" title="马尼拉酒店">马尼拉酒店</a></li>
+                         </ul>
+                         <ul class="xslgray tex_left">
+                             <li><a href="javascript:;" title="台中酒店">台中酒店</a></li>
+                             <li><a href="javascript:;" title="暹粒酒店">暹粒酒店</a></li>
+                             <li><a href="javascript:;" title="马六甲酒店">马六甲酒店</a></li>
+                             <li><a href="javascript:;" title="成都酒店">成都酒店</a></li>
+                             <li><a href="javascript:;" title="胡志明市酒店">胡志明市酒店</a></li>
+                             <li><a href="javascript:;" title="悉尼酒店">悉尼酒店</a></li>
+                             <li><a href="javascript:;" title="仙本那酒店">仙本那酒店</a></li>
+                             <li><a href="javascript:;" title="嘉义酒店">嘉义酒店</a></li>
+                             <li><a href="javascript:;"title="墨尔本酒店">墨尔本酒店</a></li>
+                             <li><a href="javascript:;"title="伦敦酒店">伦敦酒店</a></li>
+                             <li><a href="javascript:;" title="箱根酒店">箱根酒店</a></li>
+                             <li><a href="javascript:;" title="西安酒店">西安酒店</a></li>
+                             <li><a href="javascript:;" title="马尔代夫酒店">马尔代夫酒店</a></li>
+                             <li><a href="javascript:;" title="青岛酒店">青岛酒店</a></li>
+                             <li><a href="javascript:;" title="薄荷岛酒店">薄荷岛酒店</a></li>
+                             <li><a href="javascript:;"title="釜山酒店">釜山酒店</a></li>
+                             <li><a href="javascript:;" title="苏州酒店">苏州酒店</a></li>
+                             <li><a href="javascript:;" title="象岛酒店">象岛酒店</a></li>
+                         </ul>
+                     </tr>
+                 </tbody>
+              </div>
+          </div>
+          <div class="footer_bottom">
+             <div class="footer_bottom_box">
+              <a href="javascript:;">京ICP备14057401号</a> <span  >京公网安备 11010102002605号</span>
+             <p>版权所有©2005 – 2018, Agoda Company Pte. Ltd.保留所有权利</p>
+             <p>Agoda隶属于Booking Holdings Inc.，该集团是全球领先的在线旅游及相关服务供应商。</p>
+                 <div class="footer_img">
+                    <div class="footer_img_1"></div>
+                     <div class="footer_img_2"></div>
+                     <div class="footer_img_3"></div>
+                     <div class="footer_img_4"></div>
+                     <div class="footer_img_5"></div>
+                     <div class="footer_img_6"></div>
+                 </div>
+              <small>SH-AGWEB-8A03</small>
+
+             </div>
+         </div>
+     </footer>
+
+     <script src="./js/laydate/laydate.js"></script>
+     <script src="./js/jquery-3.3.1.min.js"></script>
+     <script src="./js/bmob-min.js"></script>
+     <script src="./js/tools.js"></script>
+     <script src="./js/index.js"></script>
+</body>
+</html>
