@@ -1,0 +1,20 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.fl { float: left;}
+.fr { float: right;}
+.clearFix { zoom: 1; }
+.clearFix:after { content: ''; display: block; height: 0; visibility: hidden; clear: both; }

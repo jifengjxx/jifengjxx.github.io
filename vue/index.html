@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>demo13</title><link href=/static/css/app.ccb4b4d949d7fb81a6370c51d69e45e8.css rel=stylesheet></head><body><div id=app></div><script src=./static/bmob-min.js></script><script>(function (doc, win) {
+
+var docEl = doc.documentElement,
+
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+
+    recalc = function () {
+        var clientWidth = docEl.clientWidth;
+        if (!clientWidth) return;
+        if(clientWidth>=640){
+            docEl.style.fontSize = '100px';
+        }else{
+            docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+        }
+    };
+
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document, window);</script><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.6bc15627d95cbdc771db.js></script><script type=text/javascript src=/static/js/app.0cdf023c20dc573ac57b.js></script></body></html>
